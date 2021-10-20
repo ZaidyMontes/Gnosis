@@ -7,7 +7,7 @@ public class GreenBridge : MonoBehaviour
     public GreenConect1 greenConect1;
     public int id2;
     public GameObject parte1Green;
-    private int instancia1;
+    public int instancia1;
 
     // Start is called before the first frame update
     void Start()

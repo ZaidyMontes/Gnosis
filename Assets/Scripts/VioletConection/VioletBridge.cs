@@ -7,7 +7,7 @@ public class VioletBridge : MonoBehaviour
     public VioletConection1 violetConection1;
     public int id2;
     public GameObject parte1Violeta;
-    private int instancia1;
+    public int instancia1;
 
     // Start is called before the first frame update
     void Start()

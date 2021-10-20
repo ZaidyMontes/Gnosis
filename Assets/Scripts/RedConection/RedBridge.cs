@@ -7,7 +7,7 @@ public class RedBridge : MonoBehaviour
     public RedConection1 redConection1;
     public int id2;
     public GameObject parte1Red;
-    private int instancia1;
+    public int instancia1;
 
     // Start is called before the first frame update
     void Start()

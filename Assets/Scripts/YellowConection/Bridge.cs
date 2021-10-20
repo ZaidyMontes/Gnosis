@@ -7,8 +7,14 @@ public class Bridge : MonoBehaviour
     public Conection1 conection1;
     public int id2;
     public GameObject parte1Amarilla;
-    private int instancia1;
+    
 
+    
+
+
+    public int instancia1;
+
+    
     // Start is called before the first frame update
     void Start()
     {
@@ -38,7 +44,7 @@ public class Bridge : MonoBehaviour
         else
         {
             id2 = 1;
-
+            
         }
 
 
