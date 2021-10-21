@@ -11,7 +11,7 @@ public class ScenesControl : MonoBehaviour
     public GreenBridge greenBridge;
     public RedBridge redBridge;
     public VioletBridge violetBridge;
-    
+
     // Start is called before the first frame update
     void Start()
     {
@@ -21,39 +21,40 @@ public class ScenesControl : MonoBehaviour
     // Update is called once per frame
     void Update()
     {
-        
+       
     }
 
-    
+
     private void OnTriggerEnter(Collider other)
     {
-        if(tag == "Puzzle1") {
+        if (tag == "Puzzle1")
+        {
             SceneManager.LoadScene(2);
         }
-        else if(tag == "Puzzle2")
+        else if (tag == "Puzzle2")
         {
             SceneManager.LoadScene("screws");
 
         }
-        else if(tag == "Puzzle3")
+        else if (tag == "Puzzle3")
         {
             SceneManager.LoadScene("Jigsaw");
         }
     }
     public void Complete()
     {
-        if(yellowBridge.instancia1 == 1 && greenBridge.instancia1 == 1 && redBridge.instancia1 == 1 && violetBridge.instancia1 == 1)
+        if (yellowBridge.instancia1 == 1 && greenBridge.instancia1 == 1 && redBridge.instancia1 == 1 && violetBridge.instancia1 == 1)
         {
             Instantiate(codigo1);
-            
+
 
         }
     }
 
     public void Anotado()
     {
-        
-            SceneManager.LoadScene(1);
-        
+
+        SceneManager.LoadScene(1);
+
     }
 }
