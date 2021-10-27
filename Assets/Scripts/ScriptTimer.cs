@@ -10,7 +10,7 @@ public class ScriptTimer : MonoBehaviour
     public Text timesegundos;
     public Text timeminutos;
     private float segundos = 60f;
-    private float minutos = 10f;
+    private float minutos = 5f;
 
     // Start is called before the first frame update
     void Start()
