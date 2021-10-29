@@ -3,31 +3,40 @@ using System.Collections.Generic;
 using UnityEngine;
 using UnityEngine.EventSystems;
 
-public class Trash : MonoBehaviour, IDropHandler
+public class SlotBatery2 : MonoBehaviour, IDropHandler
 {
     public GameObject item;
-    public DragBateryLow bateryID;
+    public DragBatery2 bateryID;
     private int ready;
-    public bool red;
+    public bool green;
+
+
+
 
     private void Start()
     {
-        
+
     }
+
+
     public void OnDrop(PointerEventData eventData)
     {
         Debug.Log("Drop");
 
-        if (!item && bateryID.id == 1)
+        if (!item && bateryID.id == 3)
         {
-            
-            
-             item = DragBateryLow.objBeingDraged;
+            item = DragBatery2.objBeingDraged;
             item.transform.SetParent(transform);
             item.transform.position = transform.position;
 
-            Complete1();
+
+            Complete();
+
         }
+
+
+
+
     }
 
     private void Update()
@@ -36,16 +45,18 @@ public class Trash : MonoBehaviour, IDropHandler
         {
             Debug.Log("Remover");
             item = null;
+
         }
     }
-    
-    public void Complete1()
+
+    public void Complete()
     {
         ready++;
         print(ready);
         if (ready == 1)
         {
-            red = true;
+            green = true;
         }
     }
+
 }

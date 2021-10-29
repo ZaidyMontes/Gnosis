@@ -7,6 +7,9 @@ public class DropSlot : MonoBehaviour, IDropHandler
 {
     public GameObject item;
     public DragHandler bateryID;
+    private int ready;
+    public bool green;
+
     
     
 
@@ -26,10 +29,12 @@ public class DropSlot : MonoBehaviour, IDropHandler
             item.transform.SetParent(transform);
             item.transform.position = transform.position;
 
-
+            
+            Complete();
 
         }
-       
+     
+
 
 
     }
@@ -44,5 +49,14 @@ public class DropSlot : MonoBehaviour, IDropHandler
         }
     }
 
+    public void Complete()
+    {
+        ready++;
+        print(ready);
+        if (ready == 1)
+        {
+            green = true;
+        }
+    }
    
 }

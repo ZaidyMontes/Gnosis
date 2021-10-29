@@ -1,6 +1,7 @@
 ﻿using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
+using UnityEngine.SceneManagement;
 
 public class AccionControl : MonoBehaviour
 {
@@ -14,5 +15,10 @@ public class AccionControl : MonoBehaviour
     void Update()
     {
         
+    }
+
+    public void Terminado()
+    {
+        SceneManager.LoadScene("Principal");
     }
 }
