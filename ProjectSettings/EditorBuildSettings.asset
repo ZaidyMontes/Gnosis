@@ -14,4 +14,13 @@ EditorBuildSettings:
   - enabled: 1
     path: Assets/Scenes/Conections.unity
     guid: 9b07b345c501b984996d31413bba3448
+  - enabled: 1
+    path: Assets/Scenes/SegundaEscena.unity
+    guid: ce20aac57d12e374f881ca3f2e5ca3c0
+  - enabled: 1
+    path: Assets/Scenes/Screws.unity
+    guid: 75ee9eb13a4171d4b87053e1cd0000a6
+  - enabled: 1
+    path: Assets/Scenes/EscenaFinal.unity
+    guid: d7d2fa4c436f8d24c9990c6e22ccc173
   m_configObjects: {}

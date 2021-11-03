@@ -19,7 +19,9 @@ public class SceneControlC1 : MonoBehaviour
     public void Anotado()
     {
 
-        SceneManager.LoadScene(1);
+        SceneManager.LoadScene("SegundaEscena");
 
     }
+
+    
 }

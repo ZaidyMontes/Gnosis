@@ -8,6 +8,8 @@ TagManager:
   - Puzzle2
   - DragParent
   - Low
+  - Task
+  - Door
   layers:
   - Default
   - TransparentFX

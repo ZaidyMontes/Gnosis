@@ -36,10 +36,7 @@ public class ScenesControl : MonoBehaviour
             SceneManager.LoadScene("screws");
 
         }
-        else if (tag == "Puzzle3")
-        {
-            SceneManager.LoadScene("Jigsaw");
-        }
+        
     }
     public void Complete()
     {

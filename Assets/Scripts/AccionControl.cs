@@ -19,6 +19,6 @@ public class AccionControl : MonoBehaviour
 
     public void Terminado()
     {
-        SceneManager.LoadScene("Principal");
+        SceneManager.LoadScene("EscenaFinal");
     }
 }
