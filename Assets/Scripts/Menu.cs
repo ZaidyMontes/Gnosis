@@ -21,4 +21,18 @@ public class Menu : MonoBehaviour
     {
         SceneManager.LoadScene(1);   
     }
+
+    public void Salir()
+    {
+        Application.Quit();
+    }
+    public void Video()
+    {
+        SceneManager.LoadScene("Video");
+    }
+
+    public void MenuP()
+    {
+        SceneManager.LoadScene("Menu");
+    }
 }
